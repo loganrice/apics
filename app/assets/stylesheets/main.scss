@@ -1,0 +1,43 @@
+$blue: #0068ac;
+$blueHover: #69a6ce;
+
+@mixin border-radius($radius) {
+  -webkit-border-top-left-radius: $radius;
+  -webkit-border-bottom-left-radius: $radius;
+  -moz-border-radius-topleft: $radius;
+  -moz-border-radius-bottomleft: $radius;
+  border-top-left-radius: $radius;
+  border-bottom-left-radius: $radius;
+}
+
+@mixin border-shadow {
+  -webkit-box-shadow: -3px 0px 32px 0px rgba(119,119,119,1);
+  -moz-box-shadow: -3px 0px 32px 0px rgba(119,119,119,1);
+  box-shadow: -3px 0px 32px 0px rgba(119,119,119,1);
+}
+
+
+.page {
+  @include border-shadow;
+  position: absolute;
+  height: 80%;
+  width: 100%;
+}
+
+.navbar {
+  background-color: $blue;
+}
+
+
+.banner-text {
+  margin-top: -75px;
+  margin-left: 40px;
+  color: #ffffff;
+  z-index: 10;
+  height: 90%;
+}
+
+.nav-links {
+  color: #ffffff;
+}
+
