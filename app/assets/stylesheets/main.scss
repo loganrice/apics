@@ -16,28 +16,48 @@ $blueHover: #69a6ce;
   box-shadow: -3px 0px 32px 0px rgba(119,119,119,1);
 }
 
-
-.page {
-  @include border-shadow;
-  position: absolute;
-  height: 80%;
-  width: 100%;
+#main-nav * {
+  color: white;
+  :hover {
+    color: #333;
+  }
 }
+
+#home-link {
+  color: white;
+  :hover {
+    color: #333;
+  }
+}
+
 
 .navbar {
   background-color: $blue;
 }
 
-
-.banner-text {
-  margin-top: -75px;
-  margin-left: 40px;
-  color: #ffffff;
-  z-index: 10;
-  height: 90%;
+.carousel-wrapper {
+  max-width: 1020px;
 }
 
-.nav-links {
-  color: #ffffff;
+#carousel-example-generic {
+  max-width: 817px;
+  display: inline-block;
+}
+
+.contact-us {
+  float: right;
+  width: 211px;
+  > * {
+  padding-left: 50px;
+  }
+}
+
+/* iPads (landscape) ----------- */
+@media only screen 
+and (max-width : 965px) 
+ {
+ .contact-us {
+ display: none;
+ }
 }
 
