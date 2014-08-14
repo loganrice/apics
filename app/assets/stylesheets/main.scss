@@ -30,34 +30,43 @@ $blueHover: #69a6ce;
   }
 }
 
-
 .navbar {
   background-color: $blue;
 }
 
-.carousel-wrapper {
-  max-width: 1020px;
-}
-
-#carousel-example-generic {
+#carousel-main {
   max-width: 817px;
   display: inline-block;
 }
 
 .contact-us {
-  float: right;
+  display: inline-block;
   width: 211px;
   > * {
   padding-left: 50px;
   }
 }
 
+#announcements {
+  margin: 50px;
+  .thumbnail {
+    border: none;
+  }
+}
+
+
 /* iPads (landscape) ----------- */
 @media only screen 
-and (max-width : 965px) 
+and (max-width : 767px) 
  {
  .contact-us {
- display: none;
+  display: none;
  }
+}
+
+@media only screen and (min-width: 768px) {
+  #carousel-main {
+    margin-left: 5%;
+  }
 }
 
